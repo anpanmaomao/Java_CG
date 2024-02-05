@@ -1,0 +1,69 @@
+\begin{document}
+\begin{enumerate}
+\item Description of each java file
+\begin{enumerate}
+
+\item GUI.java
+\begin{enumerate}
+    GUI.java handles processing related to the window to be displayed. It places a button and draws the specified object by clicking the button.
+\end{enumerate}
+
+\item Mesh.java
+\begin{enumerate}
+    Mesh.java gets the vertex and triangle information from the obj file and holds it as a Mesh class. fromObj method reads the data from the obj file and gets the values.
+\end{enumerate}
+
+
+\item Vertex.java
+\begin{enumerate}
+    Vertex.java defines a type that handles information about vertices.
+\end{enumerate}
+
+
+\item Face.java
+\begin{enumerate}
+    Faces.java defines a type that handles information about triangle faces.
+\end{enumerate}
+
+
+\item Points.java
+\begin{enumerate}
+    Points.java draws vertices obtained from an obj file in 3D space.
+\end{enumerate}
+
+
+\item Wireframe.java
+\begin{enumerate}
+    Wireframe.java draws a line segment connecting the vertices from the information on the triangle faces.
+\end{enumerate}
+
+
+\item Filled.java
+\begin{enumerate}
+    Filled.java creates a triangle from the triangle face information and fills the interior of the triangle. It also draws the sides of the triangle in the same way as Wireframe.
+\end{enumerate}
+
+
+\item FlatShading.java
+\begin{enumerate}
+    FlatShading.java calculates the normal vector of each face from the face information of the triangle and uses the normal vectors to calculate the light.
+\end{enumerate}
+
+
+\item SmoothShading.java
+\begin{enumerate}
+    SmoothShading.java calculates the normal vector of each face from the face information of the triangle and uses these normal vectors to calculate the normal vector of each vertex. It performs light operations using the normal vectors of each vertex.
+\end{enumerate}
+
+\end{enumerate}
+
+
+\item Execution method
+\begin{enumerate}
+    It can be drawn by executing GUI.java. When compiling and executing, the four jar files in the data directory must be loaded. You must specify the obj files to be loaded when executing. When the program is run, a window will appear with five buttons on top. By pressing each button, the program will display an object according to the content of the button.
+\end{enumerate}
+
+\end{enumerate}	
+
+
+\end{document}
